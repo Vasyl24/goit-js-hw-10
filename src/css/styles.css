@@ -17,4 +17,22 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+  margin-left: 20px;
+}
+h3 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+.country-list {
+  margin-top: 0;
+  padding-left: 0;
+}
+.countries-list-js {
+  list-style: none;
+  margin-left: 20px;
+}
+.country-js {
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
