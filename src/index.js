@@ -1,5 +1,5 @@
 import './css/styles.css';
-import { fetchCountries } from '/src/fetchCountries.js';
+import { fetchCountries } from './fetchCountries';
 import debounce from 'lodash.debounce';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
@@ -32,6 +32,9 @@ function onSearch() {
         Notify.failure('Oops, there is no country with that name');
         return err;
       });
+  } else {
+    countryList.innerHTML = '';
+    countryInfo.innerHTML = '';
   }
 }
 
